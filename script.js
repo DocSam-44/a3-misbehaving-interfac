@@ -30,11 +30,11 @@ document.addEventListener('mousemove', (event) => {
 });
 
 // *the following was an attempt to make a button that turns to say error after you click it
-// <script>
+
 // function myFunction() {
 //   document.getElementById("demo").innerHTML = "Error";
 // }
-// </script>
+
 // *this code creates the button that turns into an error after being clicked
 const btn = document.getElementById('myButton');
 
@@ -47,9 +47,9 @@ btn.addEventListener('click', function () {
 //* this overwrites the first paragraph
 // document.querySelector("#p2").innerHTML="bob is a minion"
 // *instead of modifying the first <p> element in the doc, modify the element witht he ID of p2
-function myfirstfunction(){
-document.querySelector("#p2").innerHTML="bob likes fred"
-}
+// function myfirstfunction(){
+// document.querySelector("#p2").innerHTML="bob likes fred"
+// }
 
 // myfirstfunction()
 // !components of a function:
@@ -58,4 +58,45 @@ document.querySelector("#p2").innerHTML="bob likes fred"
 // ():paramenters
 // {}:function body. what it does
 
-document.querySelector("p").addEventListener("click", myfirstfunction)
+// document.querySelector("p").addEventListener("click", myfirstfunction)
+
+
+
+function mysecondfunction() {
+    document.querySelector("#button").innerHTML = "Oh no!"
+    document.querySelector("#woohoo").innerHTML = "If it isn't working, please don't hit the button above"
+}
+
+
+document.querySelector("#woohoo").addEventListener("click", mysecondfunction)
+
+
+function myFunction() {
+    document.getElementById("woohoo").innerHTML = "blah blah blah, i do not say blah blah blah";
+}
+
+// function bob(){
+// document.querySelector("p").innerHTML="bob likes fred"
+// }
+// bob()
+
+// document.querySelector("p").addEventListener("click", bob)
+
+
+// document.querySelector("p").addEventListener("click", bob)
+
+// !functional version
+// function mysecondfunction() {
+//   document.querySelector("#woohoo").innerHTML = "bob likes fred";
+// }
+
+// document
+//   .querySelector("#woohoo")
+//   .addEventListener("click", mysecondfunction);
+
+// function myFunction() {
+//   document.getElementById("woohoo").innerHTML =
+//     "blah blah blah, i do not say blah blah blah";
+// }
+
+console.log(4+7-10)
