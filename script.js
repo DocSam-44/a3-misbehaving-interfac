@@ -42,6 +42,8 @@ btn.addEventListener('click', function () {
     btn.textContent = 'Error ;p';
 });
 
-// following class instructions
+// !following class instructions
 // document.querySelector("p").innerHTML="bob is a minion"
-// this overwrites the first paragraph
+//* this overwrites the first paragraph
+// document.querySelector("#p2").innerHTML="bob is a minion"
+// *instead of modifying the first <p> element in the doc, modify the element witht he ID of p2
