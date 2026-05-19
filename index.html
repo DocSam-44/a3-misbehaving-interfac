@@ -53,15 +53,29 @@ function myFunction() {
 <!-- !the goal here is to make a the person hit a button on the keyboard but once they hit it, a popup says "why'd you click that?" and when they look back to the instructions that told them to hit it, it now says either a different key or it changes from do hit to don't hit  -->
 
 
+<!-- todo trying to make a new botton that has a pop up once you click the botton after entering text -->
+
+<p>Since this is a new site, you may experience stubborn technical difficulties. If ypu are still not able to utilize the available buttons, leave your email in the box below and we will trouble shoot your error directly. Thank you for your patience.</p>
 
 
+<input id="myInput" value="Email">
+<button id="myBtn" onclick="javascript:alert('Thank you for your submission. We will get back to you about the issue you are experiencing within the next 10 million years... probably')">Submit</button>
 
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
+});
+</script>
 
 <!-- ?stuff we do in class -->
- <!-- <div class="readingnotes">
+ <div class="readingnotes">
 <h1>reading response</h1>
 <p id="p2">here we go!</p>
- </div> -->
+ </div>
 
 
 

@@ -47,3 +47,14 @@ btn.addEventListener('click', function () {
 //* this overwrites the first paragraph
 // document.querySelector("#p2").innerHTML="bob is a minion"
 // *instead of modifying the first <p> element in the doc, modify the element witht he ID of p2
+function myfirstfunction(){
+document.querySelector("#p2").innerHTML="bob likes fred"
+
+}
+
+myfirstfunction()
+// !components of a function:
+// function:tell javascript you are making a new function
+// myfirst function:name if function that i gave it
+// ():paramenters
+// {}:function body. what it does
