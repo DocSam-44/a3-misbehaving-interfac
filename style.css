@@ -20,3 +20,17 @@ body {
     /* Smooth transition for the escape animation */
     transition: top 0.2s ease-out, left 0.2s ease-out; 
 }
+
+
+/* style.css */
+:root {
+  font-size: 16px; /* Your base size */
+}
+
+body {
+  font-size: 1rem; /* This will be 16px */
+}
+
+h1 {
+  font-size: 2.5rem; /* This will scale relative to the root */
+}
