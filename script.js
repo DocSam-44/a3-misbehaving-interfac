@@ -37,6 +37,6 @@ document.addEventListener('mousemove', (event) => {
 
 const btn = document.getElementById('myButton');
 
-btn.addEventListener('click', function() {
-  btn.textContent = 'Error ;p';
+btn.addEventListener('click', function () {
+    btn.textContent = 'Error ;p';
 });

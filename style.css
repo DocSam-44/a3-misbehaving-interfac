@@ -1,15 +1,18 @@
 body {
     margin: 0;
     height: 100vh;
-    overflow: hidden; /* Prevents scrollbars from appearing when the button moves */
+    overflow: hidden;
+    /* Prevents scrollbars from appearing when the button moves */
     background-color: #f0f0f0;
 }
 
 #runaway-btn {
     position: absolute;
-    top: 50%; /* Starts the button in the middle of the screen */
+    top: 50%;
+    /* Starts the button in the middle of the screen */
     left: 50%;
-    transform: translate(-50%, -50%); /* Perfectly centers the starting position */
+    transform: translate(-50%, -50%);
+    /* Perfectly centers the starting position */
     padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
@@ -18,19 +21,44 @@ body {
     border: none;
     border-radius: 5px;
     /* Smooth transition for the escape animation */
-    transition: top 0.2s ease-out, left 0.2s ease-out; 
+    transition: top 0.2s ease-out, left 0.2s ease-out;
 }
 
 
 /* style.css */
 :root {
-  font-size: 16px; /* Your base size */
+    font-size: 16px;
+    /* Your base size */
 }
 
 body {
-  font-size: 1rem; /* This will be 16px */
+    font-size: 1rem;
+    /* This will be 16px */
 }
 
 h1 {
-  font-size: 2.5rem; /* This will scale relative to the root */
+    font-size: 2.5rem;
+    /* This will scale relative to the root */
+}
+
+
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
 }
