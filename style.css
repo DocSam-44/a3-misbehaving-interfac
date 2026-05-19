@@ -1,0 +1,5 @@
+#runaway-btn {
+  position: absolute;
+  /* Adjust the time (0.2s) to change the dodging speed */
+  transition: top 0.2s ease-out, left 0.2s ease-out; 
+}
