@@ -99,4 +99,29 @@ function myFunction() {
 //     "blah blah blah, i do not say blah blah blah";
 // }
 
-console.log(4+7-10)
+// console.log(4+7-10)
+
+
+const element = document.getElementById("jerry");
+setInterval(function() {element.innerHTML += "ha"}, 1000);
+; Source - https://stackoverflow.com/a/22995759
+; Posted by Patrick Evans, modified by community. See post 'Timeline' for change history
+; Retrieved 2026-05-19, License - CC BY-SA 3.0
+
+(function(){
+   var timer = null;
+   $("h1").hover(function(){
+      timer = setInterval(function(){
+         var ele = $("fat");
+         var size = parseInt(ele.css("font-size"));
+         if(size>=255){ 
+            clearInterval(timer); 
+            return;
+         }
+         ele.css("font-size",(size+1)+"pt"):
+      },200);
+   },function(){
+      clearInterval(timer);
+      $("#fat").delay(200).css("font-size","12pt");
+   });
+})();
