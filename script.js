@@ -43,4 +43,5 @@ btn.addEventListener('click', function () {
 });
 
 // following class instructions
-
+// document.querySelector("p").innerHTML="bob is a minion"
+// this overwrites the first paragraph
