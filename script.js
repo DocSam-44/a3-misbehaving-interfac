@@ -1,3 +1,4 @@
+// *I googled how to make a button that avoids the mouse but this was the result and I am not sure to develop something like this using something with basic guides like W3
 const button = document.getElementById('runaway-btn');
 const triggerDistance = 100; // Radius in pixels where the button starts fleeing
 
@@ -34,9 +35,12 @@ document.addEventListener('mousemove', (event) => {
 //   document.getElementById("demo").innerHTML = "Error";
 // }
 // </script>
-
+// *this code creates the button that turns into an error after being clicked
 const btn = document.getElementById('myButton');
 
 btn.addEventListener('click', function () {
     btn.textContent = 'Error ;p';
 });
+
+// following class instructions
+
