@@ -1,5 +1,22 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* Prevents scrollbars from appearing when the button moves */
+    background-color: #f0f0f0;
+}
+
 #runaway-btn {
-  position: absolute;
-  /* Adjust the time (0.2s) to change the dodging speed */
-  transition: top 0.2s ease-out, left 0.2s ease-out; 
+    position: absolute;
+    top: 50%; /* Starts the button in the middle of the screen */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfectly centers the starting position */
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* Smooth transition for the escape animation */
+    transition: top 0.2s ease-out, left 0.2s ease-out; 
 }

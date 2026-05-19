@@ -28,3 +28,15 @@ document.addEventListener('mousemove', (event) => {
     }
 });
 
+// *the following was an attempt to make a button that turns to say error after you click it
+// <script>
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = "Error";
+// }
+// </script>
+
+const btn = document.getElementById('myButton');
+
+btn.addEventListener('click', function() {
+  btn.textContent = 'Error ;p';
+});
