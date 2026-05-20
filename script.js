@@ -127,12 +127,6 @@ slider.addEventListener("input", function () {
 });
 
 
-
-
-
-
-
-
 // !this works
 // const cake = document.getElementById("jerry");
 
@@ -144,9 +138,6 @@ slider.addEventListener("input", function () {
 //   size += 2;
 //   cake.style.fontSize = size + "px";
 // }, 1000);
-
-
-
 
 
 // .style.fontSize="15px|initial|inherant";
