@@ -119,7 +119,12 @@ setInterval(function() {
 }, 1000);
 
 
+const slider = document.getElementById("brightness");
 
+slider.addEventListener("input", function () {
+    document.body.style.filter =
+        `brightness(${slider.value}%)`;
+});
 
 
 
