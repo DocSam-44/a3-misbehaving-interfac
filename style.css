@@ -66,11 +66,24 @@ h1 {
 #jerry{ font-size: 16px; } */
 
 .colour {
-  background-color: rgb(20, 134, 47);
+  background-color: rgb(45, 192, 79);
   padding: 2px 4px; 
+  font-family:cursive;
 }
 
 body {
 font-size: 17px;
+
+}
+
+.disclaimer {
+  background-color: rgb(206, 160, 95);
+  padding: 2px 4px; 
+}
+
+#runaway-btn {
+position: absolute;
+top: 505px;
+left: 400px;
 
 }
