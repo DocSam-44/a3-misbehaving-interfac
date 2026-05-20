@@ -68,12 +68,12 @@ function mysecondfunction() {
 }
 
 
-document.querySelector("#woohoo").addEventListener("click", mysecondfunction)
+// document.querySelector("#woohoo").addEventListener("click", mysecondfunction)
 
 
-function myFunction() {
-    document.getElementById("woohoo").innerHTML = "blah blah blah, i do not say blah blah blah";
-}
+// function myFunction() {
+//     document.getElementById("woohoo").innerHTML = "blah blah blah, i do not say blah blah blah";
+// }
 
 // function bob(){
 // document.querySelector("p").innerHTML="bob likes fred"
@@ -102,26 +102,80 @@ function myFunction() {
 // console.log(4+7-10)
 
 
-const element = document.getElementById("jerry");
-setInterval(function() {element.innerHTML += "ha"}, 1000);
-; Source - https://stackoverflow.com/a/22995759
-; Posted by Patrick Evans, modified by community. See post 'Timeline' for change history
-; Retrieved 2026-05-19, License - CC BY-SA 3.0
+const frog = document.getElementById("jerry");
 
-(function(){
-   var timer = null;
-   $("h1").hover(function(){
-      timer = setInterval(function(){
-         var ele = $("fat");
-         var size = parseInt(ele.css("font-size"));
-         if(size>=255){ 
-            clearInterval(timer); 
-            return;
-         }
-         ele.css("font-size",(size+1)+"pt"):
-      },200);
-   },function(){
-      clearInterval(timer);
-      $("#fat").delay(200).css("font-size","12pt");
-   });
-})();
+let count = 0;
+
+setInterval(function() {
+    if (count < 10) {
+        frog.innerHTML += "ha";
+    count++;
+} else {
+    frog.innerHTML = "";
+        count = 0;
+    }
+}, 1000);
+
+
+
+
+
+
+
+
+
+
+
+// !this works
+// const cake = document.getElementById("jerry");
+
+// let size = 20;
+
+// setInterval(function() {
+//   cake.innerHTML += "Error";
+
+//   size += 2;
+//   cake.style.fontSize = size + "px";
+// }, 1000);
+
+
+
+
+
+// .style.fontSize="15px|initial|inherant";
+
+
+// ; Source - https://stackoverflow.com/a/22995759
+// ; Posted by Patrick Evans, modified by community. See post 'Timeline' for change history
+// ; Retrieved 2026-05-19, License - CC BY-SA 3.0
+
+// (function(){
+//    var timer = null;
+//    $("h1").hover(function(){
+//       timer = setInterval(function(){
+//          var ele = $("fat");
+//          var size = parseInt(ele.css("font-size"));
+//          if(size>=255){ 
+//             clearInterval(timer); 
+//             return;
+//          }
+//          ele.css("font-size",(size+1)+"pt"):
+//       },200);
+//    },function(){
+//       clearInterval(timer);
+//       $("#fat").delay(200).css("font-size","12pt");
+//    });
+// })();
+
+// let size = 16; // Initial font size in pixels
+// const element = document.getElementById("textElement");
+
+// const timer = setInterval(() => {
+//     size += 1; // Increase size by 1px
+//     element.style.fontSize = size + "px";
+
+//     // Optional: Stop when a certain size is reached
+//     if (size >= 50) {
+//         clearInterval(timer);
+//     }
+// }, 100); // Runs every 100 milliseconds
