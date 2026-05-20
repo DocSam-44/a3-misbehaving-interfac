@@ -103,6 +103,7 @@ function mysecondfunction() {
 
 
 const frog = document.getElementById("jerry");
+frog.style.fontSize = "40px";
 
 let count = 0;
 
@@ -111,6 +112,7 @@ setInterval(function() {
         frog.innerHTML += "ha";
     count++;
 } else {
+// *this is what cues the code to clear and repeat from the start after ten repeats of "ha"
     frog.innerHTML = "";
         count = 0;
     }
