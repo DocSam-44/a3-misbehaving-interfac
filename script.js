@@ -107,13 +107,13 @@ frog.style.fontSize = "40px";
 
 let count = 0;
 
-setInterval(function() {
+setInterval(function () {
     if (count < 10) {
         frog.innerHTML += "ha";
-    count++;
-} else {
-// *this is what cues the code to clear and repeat from the start after ten repeats of "ha"
-    frog.innerHTML = "";
+        count++;
+    } else {
+        // *this is what cues the code to clear and repeat from the start after ten repeats of "ha"
+        frog.innerHTML = "";
         count = 0;
     }
 }, 1000);
@@ -177,3 +177,75 @@ slider.addEventListener("input", function () {
 //         clearInterval(timer);
 //     }
 // }, 100); // Runs every 100 milliseconds
+
+
+//! stuff for thursday class
+// console.log('hello')
+
+// let blahblahblah = 4
+
+// console.log(blahblahblah)
+
+// // if else code
+
+// if(blahblahblah == 4){
+// console.log('it equals 4')
+
+
+
+// document.addEventListener('keydown', (e) => {
+//     if (e.code === "Space") {
+//         // ACTION A: Space is pressed
+//         console.log("Spacebar is down!");
+//     } else {
+//         // ACTION B: Other keys or idle state
+//         console.log("Spacebar is not pressed.");
+//     }
+// });
+
+// }
+
+
+
+// document.addEventListener('keydown', (event) => {
+//     console.log(event.key)
+// })
+
+// let counter = 0
+
+
+// document.addEventListener('keydown', (event) => {
+//     console.log(event.key) 
+//     if (event.key ==' '){
+// if (counter == 4){
+//     console.log('yay')
+// }
+
+// counter = counter + 1 
+
+// console.log(counter)
+
+//     }
+// })
+
+// ! the below code is from the in class exercise but I thought it would be fun and unexpected to leave it at the bottom of the page as a little finale
+
+
+const colorbtn = document.getElementById('mybutton');
+let clickCount = 0; // Tracks the number of clicks
+
+colorbtn.addEventListener('click', function () {
+    clickCount++; // Increase count by 1 on every click
+
+    if (clickCount === 1) {
+        document.body.style.backgroundColor = 'blue';
+    } else if (clickCount === 2) {
+        document.body.style.backgroundColor = 'purple';
+    } else if (clickCount === 3) {
+        document.body.style.backgroundColor = 'green';
+    } else if (clickCount === 4) {
+        document.body.style.backgroundColor = 'orange';
+    } else if (clickCount === 5) {
+        document.body.style.backgroundColor = 'pink';
+    }
+})
