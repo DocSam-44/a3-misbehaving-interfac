@@ -1,4 +1,4 @@
-// *I googled how to make a button that avoids the mouse but this was the result and I am not sure to develop something like this using something with basic guides like W3
+// *I googled how to make a button that avoids the mouse but this was the result and I am not sure to develop something like this using something with basic guides like W3 -> further referenced comment in html
 const button = document.getElementById('runaway-btn');
 const triggerDistance = 100; // Radius in pixels where the button starts fleeing
 
@@ -235,6 +235,12 @@ const colorbtn = document.getElementById('mybutton');
 let clickCount = 0; // Tracks the number of clicks
 
 colorbtn.addEventListener('click', function () {
+    const chaos = document.createElement("h3");
+
+chaos.textContent = "SYSTEM FAILURE";
+
+document.body.appendChild(chaos);
+
     clickCount++; // Increase count by 1 on every click
 
     if (clickCount === 1) {
@@ -249,3 +255,34 @@ colorbtn.addEventListener('click', function () {
         document.body.style.backgroundColor = 'pink';
     }
 })
+
+
+// * The following code is aimed at adding an extra flaire to the run away button. I asked ai for a suggestion on what would make my existing code (which I pasted) trigger a secondary effect 
+if (distance < triggerDistance) {
+
+    const maxTop = window.innerHeight - btnRect.height;
+    const maxLeft = window.innerWidth - btnRect.width;
+
+    const newTop = Math.max(0, Math.min(Math.random() * maxTop, maxTop));
+    const newLeft = Math.max(0, Math.min(Math.random() * maxLeft, maxLeft));
+
+    button.style.top = `${newTop}px`;
+    button.style.left = `${newLeft}px`;
+
+    // *DOM addition that was added afterwards to meet rubric criteria
+    const popup = document.createElement("p");
+
+    popup.textContent = "ERROR";
+
+    popup.style.position = "absolute";
+    popup.style.top = `${newTop}px`;
+    popup.style.left = `${newLeft}px`;
+    popup.style.color = "red";
+
+    document.body.appendChild(popup);
+
+    // DOM removal
+    setTimeout(() => {
+        popup.remove();
+    }, 1000);
+}
