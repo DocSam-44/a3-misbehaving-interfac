@@ -60,7 +60,7 @@ btn.addEventListener('click', function () {
 
 // document.querySelector("p").addEventListener("click", myfirstfunction)
 
-
+// *this code is used to gaslight the user because (using other codes in my files) it collaborates to initially say 'do' hit the button but once you do it tricks/gaslights you by changing to 'don't' as if it always said that and you read it wrong.
 
 function mySecondFunction() {
     document.querySelector("#button").innerHTML = "Oh no!"

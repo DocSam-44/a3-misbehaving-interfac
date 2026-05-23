@@ -1,10 +1,14 @@
+/* *these are specifications for the viewing of the website by designating it for the entire 'body' */
+
 body {
     margin: 0;
     height: 100vh;
     /* overflow: hidden; */
-    /* Prevents scrollbars from appearing when the button moves */
+    /* The overflow hissen :prevents scrollbars from appearing when the button moves... I removed this to bring back the scroll bars */
     background-color: #f0f0f0;
 }
+
+/* *this is the initial code for the runaway button which is expanded on below and especially in the hmtl file */
 
 #runaway-btn {
     position: absolute;
@@ -25,6 +29,7 @@ body {
 }
 
 
+/* *I asked ai how to specify a more consistant font size for my page and this is what it provided. I then adjusted the actual number to my preference */
 /* style.css */
 :root {
     font-size: 16px;
@@ -32,6 +37,7 @@ body {
 }
 
 
+/* *this sets a base size for the websites font but allows for changes using rem which is a flexible unit to be more accessible */
 
 body {
     font-size: 1rem;
@@ -39,13 +45,13 @@ body {
 }
 
 
-
+/* *similar to above, but this is specified for h1 heading codes */
 h1 {
     font-size: 2.5rem;
     /* This will scale relative to the root */
 }
 
-/* the three blocks of code below edited the specific aesthetics of the slider when matched with the hmtl code */
+/* *the three blocks of code below edited the specific aesthetics of the slider when matched with the hmtl code */
 
 .slider:hover {
     opacity: 1;
@@ -68,7 +74,7 @@ h1 {
 #jerry{ font-size: 16px; } */
 
 
-/* This added background colour to the title to exphasize it */
+/* *This added background colour to the title to exphasize it */
 .colour {
   background-color: rgb(45, 192, 79);
   padding: 2px 4px; 
@@ -76,14 +82,14 @@ h1 {
 }
 
 
-/* This allowed me to specify the font size for the entire page except the heading sections */
+/* *This allowed me to specify the font size for the entire page except the heading sections */
 body {
 font-size: 17px;
 
 }
 
 
-/* This was added so that the disclaimer stood out using a different coloured background than both the website and title */
+/** This was added so that the disclaimer stood out using a different coloured background than both the website and title */
 .disclaimer {
   background-color: rgb(206, 160, 95);
   padding: 2px 4px; 
