@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
-
+<!-- !michael said it is okay that my repo name is missing the 'e' on the end by accident during thursday's class -->
   <body style="background-color:rgb(222, 224, 140);"></body>
 
   <!-- *the code below is the text that I used to build up a reason for a run away button -->
@@ -28,6 +28,8 @@
   <p>Then obviously you should click the button below to learn how to make their life/lives even better</p>
 
   <!-- ? I used the propmt "how do I make a button that runs away from my mouse in git" for this to work - this is why I added 6 features instead of five to ensure that I demonstated the ability required of the rubric -->
+  
+  <!-- todo I am using this to label my first main element to identify for grading below. this moves when the mouse gets close to it using the mousemove code and changes the position -->
   <div>
     <p><button id="runaway-btn">Functional Button</button></p>
   </div>
@@ -42,6 +44,8 @@ function myFunction() {
 <element onmousemove="script.js"
 <button onmousemove="document.getElementById('demo').innerHTML = Date()">Free Coupon</button> -->
   <!-- *this code creates the button that turns into an error after being clicked -->
+
+    <!-- todo I am using this to label my second main element to identify for grading below. this controls the page brightness of the inputted elements like buttons and pictures and effects the CSS filter -->
   <button id="myButton">Click Me</button>
 
   <p>Did that not work?</p>
@@ -60,6 +64,7 @@ function myFunction() {
   <!-- *this is the code for the non functional sliding scale -->
   <!-- todo make the sliding scale have an effect on the page like brightness or font size -- completed below-->
 
+    <!-- todo I am using this to label my third main element to identify for grading below -->
   <div class="slidecontainer">
     <p>Mouse aligner below</p>
     <input type="range" min="1" max="500" value="100" id=brightness>
@@ -81,7 +86,7 @@ function myFunction() {
       below!!</p>
 
       <!-- * this following code switches the picture depending on which button is clicked to do an unexpected failure rather than the 'intended' coupon -->
-
+  <!-- todo I am using this to label my eighth main element to identify for grading below. This changes the image using js by having the user interact with the button for each effect-->
     <button onmouseover="document.getElementById('myImage').src='eeyore-winnie-the-pooh.gif'">Reveal your free coupon for
       dog treats</button>
 
@@ -97,7 +102,7 @@ function myFunction() {
     <p>Since this is a new site, you may experience stubborn technical difficulties. If you are still not able to
       utilize the available buttons, leave your email in the box below and we will trouble shoot your error directly.
       Thank you for your patience.</p>
-
+  <!-- todo I am using this to label my sixth/seventh main element to identify for grading below. This works with the keypress function in js and the trigger js 'alert' code to connect to a popup result. -->
 
     <input id="myInput" value="Email">
     <button id="myBtn"
@@ -149,15 +154,22 @@ function myFunction() {
 
 <!-- this code serves no special purpose other than to insert the image that directs the users attention to the botton of the page so that when they are still using the previous functions, they can't see the computer laughing with the hahas yet -->
     <p><input type="image" src="red-down-arrow-png.webp" alt="Submit Form" width="200" height="700"></p>
-
+  <!-- todo I am using this to label my fifth main element to identify for grading below. this can be stopped using the checkbox. it uses setinterval to time the appearances of 'ha' and stops them after 10 using the js -->
     <p id="jerry"></p>
 
+<!-- this code below connects to my js file to turn off the hahaha laughter is the box is checked -->
+  <!-- todo I am using this to label my ninth main element to identify for grading below. this element is a keyboard tirggered event -->
 <input type="checkbox" id="laughToggle">
-<label for="laughToggle">Turn off evil laughter</label>
 
-    <button id="myButton">clickyclick4disco</button>
+<label for="laughToggle">Do you feel frustrated? Check this button to turn off the laughter and stew in peace :)</label>
 
-
+ &emsp;
+  <p> </p>
+   &emsp;
+  <p> </p>
+  <!-- todo I am using this to label my fourth main element to identify for grading below. this changes the background colour each time you click on the button, tracks click count, and uses/works with a DOM element -->
+<div>    <button id="myButton">clickyclick4disco</button>
+</div>
 
 
     <!-- *this is what connects the js file to this html file -->
