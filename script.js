@@ -62,7 +62,7 @@ btn.addEventListener('click', function () {
 
 
 
-function mysecondfunction() {
+function mySecondFunction() {
     document.querySelector("#button").innerHTML = "Oh no!"
     document.querySelector("#woohoo").innerHTML = "If it isn't working, please don't hit the button above"
 }
@@ -102,20 +102,47 @@ function mysecondfunction() {
 // console.log(4+7-10)
 
 
+// const frog = document.getElementById("jerry");
+// frog.style.fontSize = "40px";
+
+// let count = 0;
+
+// setInterval(function () {
+//     if (count < 10) {
+//         frog.innerHTML += "ha";
+//         count++;
+//     } else {
+//         // *this is what cues the code to clear and repeat from the start after ten repeats of "ha"
+//         frog.innerHTML = "";
+//         count = 0;
+//     }
+// }, 1000);
+
+// ! the above is what I had before but I thought a good way to add a new UI element would to be to add a way to turn off the evil laughter; That is what is below
+
 const frog = document.getElementById("jerry");
+const laughToggle = document.getElementById("laughToggle");
+
 frog.style.fontSize = "40px";
 
 let count = 0;
 
 setInterval(function () {
+
+    // Stop laughter if checkbox is checked
+    if (laughToggle.checked) {
+        frog.innerHTML = "";
+        return;
+    }
+
     if (count < 10) {
         frog.innerHTML += "ha";
         count++;
     } else {
-        // *this is what cues the code to clear and repeat from the start after ten repeats of "ha"
         frog.innerHTML = "";
         count = 0;
     }
+
 }, 1000);
 
 
@@ -231,10 +258,10 @@ slider.addEventListener("input", function () {
 // ! the below code is from the in class exercise but I thought it would be fun and unexpected to leave it at the bottom of the page as a little finale
 
 
-const colorbtn = document.getElementById('mybutton');
+const colorBtn = document.getElementById('myButton');
 let clickCount = 0; // Tracks the number of clicks
 
-colorbtn.addEventListener('click', function () {
+colorBtn.addEventListener('click', function () {
     const chaos = document.createElement("h3");
 
 chaos.textContent = "SYSTEM FAILURE";
